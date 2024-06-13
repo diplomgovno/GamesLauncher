@@ -1,0 +1,64 @@
+﻿<Page x:Class="GamesLauncher.Pages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GamesLauncher.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Main">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <StackPanel>
+                <Label Content="Играть"  Background="LightGray" Style="{StaticResource Name}"/>
+                <Label x:Name="LGH" Content="GitHub"  Style="{StaticResource Name}"/>
+                <Label x:Name="LNews" Content="Новости" Style="{StaticResource Name}"/>
+            </StackPanel>
+            <Label x:Name="LAbout" Content="О нас" VerticalAlignment="Bottom" Style="{StaticResource Name}"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <StackPanel Background="LightGray">
+                <Label Content="Установка"/>
+                <DockPanel x:Name="DPDownloadSmallFountain">
+                    <StackPanel>
+                        <Label Content="Small fountain" Style="{StaticResource Name}"/>
+                        <TextBlock Padding="5 0 0 0" Width="230">Игра в которой вам предстоит отвечать <LineBreak /> на интересную викторину о подводном <LineBreak /> мире и не только</TextBlock>
+                    </StackPanel>
+                    <Button x:Name="BTNDownloadSmallFountain" Content="Скачать" Width="100" HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel x:Name="DPDownloadPuzzleInABox">
+                    <StackPanel>
+                        <Label Content="Puzzle in a box" Style="{StaticResource Name}"/>
+                        <TextBlock Padding="5 0 0 0" Width="230">Культовая франшиза из  <LineBreak /> позновательных головоломок и  <LineBreak /> интереснейших тестов</TextBlock>
+                    </StackPanel>
+                    <Button x:Name="BTNDownloadPuzzleInABox" Content="Скачать" Width="100" HorizontalAlignment="Right"/>
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="2" >
+            <StackPanel>
+                <Label Content="Готовые к запуску"/>
+                <DockPanel x:Name="DPPlaySmallFountain">
+                    <StackPanel>
+                        <Label Content="Small fountain" Style="{StaticResource Name}"/>
+                        <TextBlock Padding="5 0 0 0" Width="230">Игра в которой вам предстоит отвечать <LineBreak /> на интересную викторину о подводном <LineBreak /> мире и не только</TextBlock>
+                    </StackPanel>
+                    <Button x:Name="BTNPlaySmallFountain" Content="Играть" Width="100" HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel  x:Name="DPPlayPuzzleInABox">
+                    <StackPanel>
+                        <Label Content="Puzzle in a box" Style="{StaticResource Name}"/>
+                        <TextBlock Padding="5 0 0 0" Width="230">Культовая франшиза из  <LineBreak /> позновательных головоломок и  <LineBreak /> интереснейших тестов</TextBlock>
+                    </StackPanel>
+                    <Button x:Name="BTNPlayPuzzleInABox" Content="Играть" Width="100" HorizontalAlignment="Right"/>
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
